@@ -1,4 +1,3 @@
-import React from "react";
 import dt1 from "../assets/dt1.jpeg";
 import kep1 from "../assets/kep1.jpeg";
 import oumal1 from "../assets/oumal1.jpeg"
@@ -179,6 +178,19 @@ const Menu = () => {
                                     <img src={dt2} className="flex-shrink-0 w-full h-full object-cover rounded-lg snap-start"/>
                                     <img src={dt3} className="flex-shrink-0 w-full h-full object-cover rounded-lg snap-start" />
                                 </div>
+                            </div>
+                        </div>
+                    }
+                     video={
+                        <div className="mt-3 flex flex-row items-center justify-center rounded-full">
+                            <div className="bg-[#007BFF] rounded-full p-1 hover:bg-[#0056B3]">
+                                <a 
+                                    href="https://www.tiktok.com/@daungte_kampot/video/7500824890782584082?is_from_webapp=1&sender_device=pc&web_id=7490609491575096848"
+                                    target="_blank"
+                                    className="m-2"
+                                >
+                                    Watch it here!
+                                </a>
                             </div>
                         </div>
                     }

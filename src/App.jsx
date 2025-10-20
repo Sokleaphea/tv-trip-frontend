@@ -1,15 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-// import kampot from "./assets/kampot.jpg";
 import Homepage from "./components/Homepage";
-import Menu from "./components/Menu";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar/>
-      <Homepage/>
-      {/* <Menu/> */}
-    </div>
+      <Routes>
+        <Route path="/" element={<Homepage />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/contact" element={<Contact/>}/>
+      </Routes>
+    </Router>
   )
 }
 export default App;

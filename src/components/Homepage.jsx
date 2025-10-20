@@ -1,9 +1,10 @@
 import React from "react";
 import Menu from "../components/Menu"
+import About from "../components/About"
 
 const Homepage = () => {
     return (
-        <div>
+        <div className="">
             <div>
                 <div className="md:m-10 m-3">
                     <div className="">
