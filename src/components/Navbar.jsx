@@ -1,4 +1,3 @@
-import kampot from "../assets/kampot.jpg"
 const Navbar = () => {
   return (
     <div className="flex items-center justify-between px-8 h-16 shadow-md relative bg-center p-5 md:m-10 m-5 rounded-full"
