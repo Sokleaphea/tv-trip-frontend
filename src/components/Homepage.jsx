@@ -1,6 +1,5 @@
 import React from "react";
 import Menu from "../components/Menu"
-import About from "../components/About"
 
 const Homepage = () => {
     return (

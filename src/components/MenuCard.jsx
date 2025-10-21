@@ -1,21 +1,12 @@
-import { useState, useRef, useEffect } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 
-const MenuCard = ({ bgimg, title, subtitle, description, extraContent, icon, video }) => {
-    const [isOpen, setIsOpen] = useState(false);
+const MenuCard = ({ bgimg, title, subtitle, description, extraContent, icon, video, isOpen, onToggle }) => {
+    // const [isOpen, setIsOpen] = useState(false);
     const contentRef = useRef(null);
-    const [height, setHeight] = useState("0px");
-
-    useEffect(() => {
-        if (contentRef.current) {
-            setHeight(isOpen ? `${contentRef.current.scrollHeight}px` : "0px");
-        }
-    }, [isOpen]);
-
     return (
         <div
             className="relative w-full rounded-2xl shadow-md overflow-hidden text-white cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={onToggle}
             style={{ height: isOpen ? "500px" : "128px" }}
         >
             <img
