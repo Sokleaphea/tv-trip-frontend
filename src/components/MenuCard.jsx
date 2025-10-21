@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 
 const MenuCard = ({ bgimg, title, subtitle, description, extraContent, icon, video, isOpen, onToggle }) => {
